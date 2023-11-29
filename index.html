@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bh Pizza Web</title>
+    <link rel="stylesheet" href="./stylesSheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./images/pizzaLogo.png" alt="Pizza Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Piza</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#pizzas" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pizza Type
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#pizzas">Cheese Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Veggie Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Pepperoni Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Meat Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Margherita Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#bbqpizza">BBQ Chicken Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Hawaiian Pizza.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#chkFijta">Buffalo Pizz.</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#pizzas">Supreme Pizza</a></li>
+                     
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Contact Us</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-outline-success bg-warning"><a href="#orderus">Order Me</button></a>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/pizza1.jpg" class="d-block w-100" alt="Pizza One">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/pizza2.jpg" class="d-block w-100" alt="Pizza Two">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/pizza3.jpg" class="d-block w-100" alt="Pizza Three">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/pizza4.jpg" class="d-block w-100" alt="Pizza Four">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+
+    </header>
+    <div id="about" class="about-Section">
+        <h1>About Pizza</h1>
+        
+        <p>Pizza is a beloved and versatile dish that originated in Naples, Italy. It typically consists of a round, flat dough topped with tomato sauce, cheese, and various toppings, baked in an oven. The simplicity of its ingredients belies the complex and satisfying flavors it offers. The crust can range from thin and crispy to thick and chewy, appealing to a diverse range of preferences.
+
+        Pizza has evolved over time and has become a global phenomenon, with countless regional variations and creative toppings. Popular choices include classics like Margherita, pepperoni, and Hawaiian, as well as gourmet options with unique ingredients. Whether enjoyed at a pizzeria, ordered for delivery, or homemade, pizza remains a universally loved comfort food that brings people together. Its enduring popularity reflects its ability to adapt to different tastes while retaining its fundamental appeal.</p>
+    </div>
+    <!-- ======= Courses Section ======= -->
+    <section id="pizzas" class="pizzas">
+     <div class="container" data-aos="fade-up">
+  
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Pizz's World</h1>
+            
+            <p>Explore a world of pizza possibilities with tantalizing options like Margherita, a classic adorned with fresh mozzarella, tomatoes, and basil, or the hearty Meat Lovers, boasting a carnivore's dream of sausage, pepperoni, and bacon. For a veggie delight, the Garden Veggie Pizza bursts with colorful bell peppers, mushrooms, and olives. Adventurous palates can savor a BBQ Chicken Pizza, featuring smoky barbecue sauce, grilled chicken, and red onions. Whether craving a Hawaiian escape with pineapple and ham or a spicy kick with Pepperoni Jalapeño, the diverse realm of pizzas caters to every taste, ensuring a slice for every pizza enthusiast's preference.</p>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="pizza-item">
+                    <img src="./images/Cheese Pizza.jpg" class="img-fluid" alt="...">
+                    <div class="pizza-content">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4>Cheese Pizza.</h4>
+                            <p class="price">Rs. 2000.00/=</p>
+                        </div>         
+                        <p>It should be no shocker that a classic is the statistical favorite. Cheese pizza is one of the most popular choices. It will always be a simple, unadorned masterpiece on its own.</p> 
+                    </div>
+                </div>
+            </div> <!-- End Course Item 1-->
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="pizza-item">
+                    <img src="./images/Veggie Pizza.jpg" class="img-fluid" alt="...">
+                    <div class="pizza-content">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4>Veggie Pizza</h4>
+                            <p class="price">Rs.2200.00/=</p>
+                        </div>
+                 
+                        <p>When you want to jazz up your cheese pizza with color and texture, veggies are the perfect topping. And you’re only limited by your imagination. Everything from peppers and mushrooms, to eggplant and onions make for an exciting and tasty veggie pizza.</p>
+                  
+                    </div>
+                </div>
+            </div> <!-- End Course Item 2-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item">
+                <img src="./images/Pepperoni.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Pepperoni Pizza</h4>
+                        <p class="price">Rs.2400.00/=</p>
+                    </div>
+             
+                    <p>There’s a reason this is one of the most popular types of pizza. Who doesn’t love biting into a crispy, salty round of pepperoni.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 3-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="zoom-in">
+                <img src="./images/Meat Pizza.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Meat Pizza</h4>
+                        <p class="price">Rs.2600.00/=</p>
+                    </div>
+             
+                    <p>If pepperoni just isn’t enough, and you’re looking for a pie with a bit more heft, a meat pizza is a perfect and popular choice. Pile on ground beef and sausage for a hearty meal.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 4-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="zoom-in">
+                <img src="./images/Margherita.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Margherita Pizza</h4>
+                        <p class="price">Rs.2400.00/=</p>
+                    </div>
+             
+                    <p>Deceptively simple, the Margherita pizza is made with basil, fresh mozzarella, and tomatoes. There’s a reason it’s an Italian staple and one of the most popular types of pizza in the country.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 5-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" id="bbqpizza" data-aos="zoom-in">
+                <img src="./images/BBQ Chicken.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p class="price">Rs.2900.00/=</p>
+                    </div>
+             
+                    <p>If you love BBQ chicken and you love pizza, why not put them together? This has long been a cult favorite of sports fans and college kids. The chicken slathered over the top of a pie gives it a tangy, sweet flavor that can’t be beaten.s</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 6-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="fade-up">
+                <img src="./images/Hawaiian.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Hawaiian Pizza</h4>
+                        <p class="price">Rs.2900.00/=</p>
+                    </div>
+             
+                    <p>Pineapple might not be the first thing that comes to mind when you think pizza. But add in some ham and it creates an unexpectedly solid sweet and salty combination for this type of pizza.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 7-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="fade-up">
+                <img src="./images/Buffalo-Chicken.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content" >
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Buffalo Pizza</h4>
+                        <p class="price">Rs.2700.00/=</p>
+                    </div>
+             
+                    <p>Who says your pizza has to be strictly tomato-sauce based? Branch out with some buffalo sauce on your pie. All its spicy, salty, buttery goodness is a natural pairing for pizza.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 8-->
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="fade-up">
+                <img src="./images/Supreme.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>Supreme Pizza</h4>
+                        <p class="price">Rs.2700.00/=</p>
+                    </div>
+             
+                    <p>When you can’t decide which toppings to get, it’s time for the supreme pizza. The “supreme” refers to the litany of toppings that come scattered on these pies, from sausage to vegetables to pepperoni. And it’s the combination of the flavors that really makes it sing.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 9-->    
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="pizza-item" data-aos="fade-up">
+                <img src="./images/Works Pizza.jpg" class="img-fluid" alt="...">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4>The Works Pizza</h4>
+                        <p class="price">Rs.2700.00/=</p>
+                    </div>
+             
+                    <p>And when the supreme just isn’t enough, you’re ready for the works. It’s a step up in heartiness from the supreme. The “works” usually involves a wide variety of veggie toppings including onions, olives, and mushrooms, plus bacon and pepperoni.</p>
+              
+                </div>
+            </div>
+            </div> <!-- End Course Item 10-->   
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="pizza-item" id="chkFijta" data-aos="fade-up">
+                    <img src="./images/Chicken-Fajita.jpg" class="img-fluid" alt="...">
+                    <div class="pizza-content">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4>Chicken Fajita Pizza</h4>
+                            <p class="price">Rs.2300.00/=</p>
+                        </div>
+                 
+                        <p>Savor a delightful Chicken Fajita Pizza, combining tender chicken, vibrant bell peppers, onions, and zesty spices on a golden crust. A fusion of Mexican and Italian flavors in a perfect 30-minute feast.</p>
+                  
+                    </div>
+                </div>
+            </div> <!-- End Course Item 11-->   
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="pizza-item" data-aos="fade-up">
+                    <img src="./images/chicken-kabab.jpg" class="img-fluid" alt="...">
+                    <div class="pizza-content">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4>Chicken Kabab Pizza</h4>
+                            <p class="price">Rs.2900.00/=</p>
+                        </div>
+                 
+                        <p>Indulge in the exquisite flavors of Chicken Kabab Pizza, where succulent grilled chicken kababs meet a bed of rich tomato sauce and melted cheese. Topped with aromatic herbs and spices, this fusion masterpiece delivers a symphony of tastes that will elevate your pizza experience to new heights. Unleash your taste buds!</p>
+                  
+                    </div>
+                </div>
+            </div> <!-- End Course Item 12-->   
+        </div>
+  
+      </div>
+    </section><!-- End Courses Section -->
+    
+    <section id="pizzaShopes" class="pizzaShopes">
+        <div class="content" id="orderus">
+            <h1>Where to Order the Best Pizza</h1>
+                <p>Now that you know what’s cooking in the world of pizza, it’s time to place your order. While you can get pizza just about anywhere, some cities just do it better than others. These are the 6 most pizza-obsessed cities by the number of pies ordered.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1> Dirty Water Dough (Boston, MA)</h1>
+                    </div>
+                    <p>If you’re looking for delicious slice of Boston-style pizza, then Dirty Water Dough is for you. Don’t be put off by their name, this is a solid Boston favorite.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1> Couch Tomato Catering (Philadelphia, PA)</h1>
+                    </div>
+                    <p>For pies for a big crowd, there’s none better than Couch Tomato Catering. This long-standing Philly operation mixes classics like cheese and pepperoni with new favorites like buffalo chicken. Try the Florentine, for a delightful mix of spinach and cheese.   .</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1> Listrani’s Italian Gourmet (Washington, DC)</h1>
+                    </div>
+                    <p>Listrani’s Mclean Italian Gourmet has been serving pizza lovers in D.C. since 2002. From mini pizzas to big pan pizzas, Listrani’s has got it all.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1>  Palio’s Pizza Café (Dallas, TX)</h1>
+                    </div>
+                    <p>Palio’s Pizza Café offers a lengthy list of gourmet pies with artisanal ingredients and clever names. The Nutty Chicken is topped with roasted cashews, chicken, mushroom, and spinach. And the Mean Green is made with Alfredo, pesto, spinach, bacon, feta, mozzarella.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1>Pizza Capri (Chicago, IL)</h1>
+                    </div>
+                    <p>Have you ever had a pizza topped with Kalamata olives and sun-dried tomatoes? Or have you tried rosemary potatoes and garlic, or even pesto and shrimp on your pizza? Pizza Capri dares to go there. These quirky, tasty combos are the highlights of this Chicago institution.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="pizza-content">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1>California Pizza Kitchen (Los Angeles, CA)</h1>
+                    </div>
+                    <p>There are so many different pizzas at California Pizza Kitchen, no wonder it’s a favorite all over the country. But if you’re looking for one of the most popular types of pizza, try the Original BBQ Chicken Pizza. It’s made with smoked gouda, red onions, cilantro, and a tangy BBQ sauce that you won’t forget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactus py-5" id="contactus">
+        <div class="container">
+            <div class="text-center my-4">
+                <h1 class="text-center"><span class="text-danger fs-1">Contact Us</span></h1>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+                    <form class="row g-3" action="https://formsubmit.co/eeba0cdc0a14c5436d0c501b88c7063f" method="POST">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Name</label>
+                          <input type="text" name="name" class="form-control" id="inputtext">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Email</label>
+                          <input type="email" name="email"class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" name="address"class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" name="city"class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Province</label>
+                          <select id="inputState" name="prov" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Philadelphia, PA</option>
+                            <option>Boston, MA</option>
+                            <option>Washington, DC</option>
+                            <option>Dallas, TX</option>
+                            <option>Chicago, IL</option>
+                            <option>Los Angeles, CA</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" name="zipcode"class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <label for="">Message:</label>
+                            <textarea cols="85" name="message"rows="10" placeholder="Type Your Message"></textarea>
+                        </div>
+                          <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+                    <img src="./images/pizza4.jpg" class="img-fluid border border-success p-2">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container-fluid bg-danger text-white p-2 text-center fs-5">
+            © Copyright <a href="https://bhdevelopers.netlify.app/" target="_blank">bhDevelopers</a> All Rights Reserved 2023 <br>By: Mr. Bahar Hussain</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
